@@ -1,6 +1,8 @@
 import jwt from "jsonwebtoken"
-import type { NextRequest } from "next/server"
 import Database from "better-sqlite3"
+
+import type { NextRequest } from "next/server"
+import mongoose from "mongoose"
 import { join } from "path"
 
 const db = new Database(join(process.cwd(), "database.db"))
